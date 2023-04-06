@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>
+        My First Website     
+    </title>  
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+   <style>
+        .row{
+            width:720px;
+            margin: 10px auto 10px auto ;
+        }
+        .image-container {
+            display: table-cell;
+            vertical-align: middle;
+            padding:20px;
+        }
+    </style>
+</head>
+
+<body style="background-image: url(https://i.pinimg.com/736x/76/5e/38/765e384293c82e0517d314c06bd7fee4.jpg);">
+   <!--
+    <h1 style="color:mediumblue;">
+        This is the heading salts     
+    </h1>
+    <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+        weeeeeeeeeeeeee    
+    </h2>
+    <p style="color:blue;">
+        Graphic design is my passion??<br>
+        if you give a rod fish, man day, fish get live
+    </p>
+    -->
+
+
+<div class="row">
+    <div class="image-container"><img id="donut1" src="donut_icons/donut_01.png" onmousedown="this.src='donut_icons/donut_02.png';" onmouseup="this.src='donut_icons/donut_01.png';" height="200" width="200"/></div>
+    <div class="image-container"><img id="donut2" src="donut_icons/donut_02.png" onmouseover="this.src='donut_icons/donut_01.png';" onmouseout="this.src='donut_icons/donut_02.png';" height="200" width="200"/></div>
+    <div class="image-container"><img id="donut3" src="donut_icons/donut_03.png" height="200" width="200"/></div>
+</div>
+
+<div class="row">
+    <div class="image-container"><img id="donut1" src="donut_icons/donut_01.png" onmousedown="this.src='donut_icons/donut_02.png';" onmouseup="this.src='donut_icons/donut_01.png';" height="200" width="200"/></div>
+    <div class="image-container"><img id="toilet" src="img/toilet.png"  height="200" width="200"/></div>
+    <div class="image-container"><img id="donut3" src="donut_icons/donut_03.png" height="200" width="200"/></div>
+</div>
+
+<div class="row">
+    <div class="image-container"><img id="donut1" src="donut_icons/donut_01.png" onmousedown="this.src='donut_icons/donut_02.png';" onmouseup="this.src='donut_icons/donut_01.png';" height="200" width="200"/></div>
+    <div class="image-container"><img id="donut2" src="donut_icons/donut_02.png" onmouseover="this.src='donut_icons/donut_01.png';" onmouseout="this.src='donut_icons/donut_02.png';" height="200" width="200"/></div>
+    <div class="image-container"><img id="donut3" src="donut_icons/donut_03.png" height="200" width="200"/></div>
+</div>
+
+<script>
+        var sound1 = new buzz.sound("sound/gli1.mp3");
+        var sound2 = new buzz.sound("sound/gli2.mp3");
+        var sound3 = new buzz.sound("sound/gli3.mp3");
+        var sound4 = new buzz.sound("sound/vineboom.mp3")
+
+        window.onload = function() {
+                document.getElementById('donut1').addEventListener('mouseover', function () {sound1.play(); });  
+                document.getElementById('donut2').addEventListener('click', function () {sound2.play(); });
+                document.getElementById('donut3').addEventListener('click', function () {sound3.play(); });
+                document.getElementById('donut1').addEventListener('mouseover', function () {sound1.play(); });  
+                document.getElementById('toilet').addEventListener('click', function () {sound4.play(); });
+                document.getElementById('donut3').addEventListener('click', function () {sound3.play(); });document.getElementById('donut1').addEventListener('mouseover', function () {sound1.play(); });  
+                document.getElementById('donut2').addEventListener('click', function () {sound2.play(); });
+                document.getElementById('donut3').addEventListener('click', function () {sound3.play(); });
+        }
+</script>
+
+
+</body>
+
+</html>
